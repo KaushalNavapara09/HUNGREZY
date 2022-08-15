@@ -11,7 +11,7 @@ function Products() {
     }, [])
 
     return (
-        <div className="row container-fluid">
+        <div className="row container-fluid" style={{marginLeft:'0px', marginRight: '0px'}}>
             {productData.map((productData) => {
                 return <ProductItem key={productData._id} productData={productData} />
             })}

@@ -167,6 +167,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 75px;
 }
 .image-box {
   width: 15%;

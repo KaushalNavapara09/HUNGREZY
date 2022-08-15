@@ -12,12 +12,13 @@ function Navbar() {
     let { uname } = useContext(UserContext);
     const cartContext = useContext(CartContext);
     // eslint-disable-next-line
-    let { badgeNum, setBadgeNum } = cartContext
+    let { badgeNum, setBadgeNum, setCredentials } = cartContext
     let location = useLocation();
     const handleLogout = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('uname');
         setBadgeNum({});
+        setCredentials({ houseNo: "", area: "", city: "", pincode: "", payment: "" });
     }
     useEffect(() => {
         setBadgeNum({});

@@ -6,7 +6,7 @@ function CartItem(props) {
     const CartContext = useContext(cartContext);
     let { deleteProduct, incrQty, decrQty } = CartContext;
     return (
-        <div className='Cart-Items container row g-0' style={{ marginBottom: '60px',marginLeft: '0px', marginRight: '0px' }}>
+        <div className='Cart-Items container row g-0' style={{ marginBottom: '60px', marginRight: '0px' }}>
             <div className='image-box col-md-3'>
                 <img src={cartProductData.img} alt="..." style={{ height: '120px' }} />
             </div>

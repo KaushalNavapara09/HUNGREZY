@@ -6,6 +6,7 @@ const CartState = (props) => {
     const [orderData, setOrderData] = useState([])
     const [billingData, setBillingData] = useState([])
     const [badgeNum, setBadgeNum] = useState(null)
+    const [credentials, setCredentials] = useState({ houseNo: "", area: "", city: "", pincode: "", payment: "" });
     const getCartProductsData = async () => {
         try {
             const response = await fetch("http://localhost:5000/api/cart/getallproducts", {
@@ -147,7 +148,7 @@ const CartState = (props) => {
     }
 
     return (
-        <CartContext.Provider value={{ cartProductData, getCartProductsData, deleteProduct, billingData, setBillingData, setBadgeNum, badgeNum, getNumOfProducts, incrQty, decrQty, placeOrder, orderData, setOrderData, getOrderdata }}>
+        <CartContext.Provider value={{ cartProductData, getCartProductsData, deleteProduct, billingData, setBillingData, setBadgeNum, badgeNum, getNumOfProducts, incrQty, decrQty, placeOrder, orderData, setOrderData, getOrderdata, credentials, setCredentials }}>
             {props.children}
         </CartContext.Provider>
     )
