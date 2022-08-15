@@ -2,7 +2,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 .btn-auth {
   padding: 0 2rem;
   color: #000;
@@ -16,7 +15,6 @@ input::-webkit-inner-spin-button {
 .btn-auth:hover {
   color: #fc8000;
 }
-
 .btn-LoginSignup {
   background-color: #fc8000;
   color: white;
@@ -24,7 +22,6 @@ input::-webkit-inner-spin-button {
   font-weight: 500;
   width: 150px;
 }
-
 .btn-LoginSignup:hover {
   box-shadow: 4px 4px 8px grey;
   background-color: #fc8000;
@@ -32,12 +29,10 @@ input::-webkit-inner-spin-button {
   font-size: 19px;
   font-weight: 500;
 }
-
 .srvContainer {
   color: whitesmoke;
   background-color: #473523;
 }
-
 .lanContainer {
   height: 500px;
 }
@@ -54,14 +49,12 @@ i {
   font-weight: bold;
   width: 33.33%;
 }
-
 .scontent {
   padding: 10px 10px;
   margin: 0px 60px;
   margin-bottom: 55px;
   font-size: 18px;
 }
-
 .srvimg {
   width: 15%;
   height: 15%;
@@ -131,7 +124,6 @@ iframe {
     transform: scale(1);
   }
 }
-
 .btn-addToCart {
   background-color: #fc8000;
   font-size: 15px;
