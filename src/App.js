@@ -34,7 +34,7 @@ function App() {
           rtl={false}
           draggable
           // pauseOnHover
-          toastStyle={{ backgroundColor: "#fc8000", color: "white", fontSize: "17px", marginRight: "15px", padding:"10px 30px" }}
+          toastStyle={{ backgroundColor: "#fc8000", color: "white", fontSize: "17px", marginRight: "15px", padding: "10px 30px" }}
         />
         <Navbar />
         <Routes>
@@ -47,11 +47,11 @@ function App() {
         <Login />
         <Signup />
         <Changepwd />
-        <ConfirmOrder/>
+        <ConfirmOrder />
       </Router>
       <UserState />
-      <CartState/>
-      <ProductState/>
+      <CartState />
+      <ProductState />
       <ButtonRef />
     </>
   );

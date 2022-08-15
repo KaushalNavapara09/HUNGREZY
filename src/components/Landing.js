@@ -3,12 +3,16 @@ import logo from '../images/HUNGREZY.png';
 import food from '../images/foodLanding.jpg';
 import ButtonContext from '../context/button/ButtonContext';
 import Services from './Services';
+import { Helmet } from "react-helmet";
 
 function Landing() {
     const context = useContext(ButtonContext);
     let { loginRef, signupRef } = context;
     return (
         <>
+            <Helmet>
+                <title>Hungrezy - Grab your meal online</title>
+            </Helmet>
             <div className="container-fluid h-40 g-0 mx-auto row lanContainer">
                 <div className='col-md-7 mt-5 px-5' style={{ height: '660px' }}>
                     <div className='container d-flex justify-content-between' >

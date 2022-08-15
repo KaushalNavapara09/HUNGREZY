@@ -1,10 +1,14 @@
 import React from 'react';
 import commas from '../images/commas.png';
 import Footer from './Footer';
+import { Helmet } from "react-helmet";
 
 function About() {
     return (
         <>
+            <Helmet>
+                <title>Hungrezy - About Us</title>
+            </Helmet>
             <div className='container-fluid divAbout g-0'>
                 <div className="conteiner-fluid px-5 pb-5" style={{ backgroundColor: '#F5851F' }}>
                     <img src={commas} alt="" className='mt-5 mx-5 pt-4' />
