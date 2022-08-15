@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ButtonRef from './context/button/ButtonRef';
+import UserState from './context/user/UserState';
+import ProductState from './context/product/ProductState';
+import CartState from './context/cart/CartState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <UserState>
+      <ButtonRef>
+        <ProductState>
+          <CartState>
+            <App />
+          </CartState>
+        </ProductState>
+      </ButtonRef>
+    </UserState>
   </React.StrictMode>
 );
 

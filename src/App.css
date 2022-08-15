@@ -1,38 +1,322 @@
-.App {
-  text-align: center;
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-auth {
+  padding: 0 2rem;
+  color: #000;
+  letter-spacing: 0;
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 70px;
+  width: auto;
+}
+.btn-auth:hover {
+  color: #fc8000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-LoginSignup {
+  background-color: #fc8000;
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  width: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-LoginSignup:hover {
+  box-shadow: 4px 4px 8px grey;
+  background-color: #fc8000;
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.srvContainer {
+  color: whitesmoke;
+  background-color: #473523;
+}
+
+.lanContainer {
+  height: 500px;
+}
+.services h5 {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+i {
+  cursor: pointer;
+}
+.services .mid,
+.left,
+.right {
+  margin: 20px 0px;
+  font-weight: bold;
+  width: 33.33%;
 }
 
-@keyframes App-logo-spin {
+.scontent {
+  padding: 10px 10px;
+  margin: 0px 60px;
+  margin-bottom: 55px;
+  font-size: 18px;
+}
+
+.srvimg {
+  width: 15%;
+  height: 15%;
+  margin-top: 30px;
+  margin: 10px 155px;
+}
+nav {
+  box-shadow: 0px 1px 12px 1px #ddd;
+}
+iframe {
+  box-shadow: 0px 1px 12px 3px #ddd;
+}
+.nav-link:hover {
+  color: #fc8000;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 21px;
+  color: #000;
+}
+.ftr {
+  background-color: #000;
+}
+.act {
+  color: #fc8000;
+  font-weight: 550;
+}
+.divAbout,
+.divHome,
+.divCart,
+.divOrders {
+  margin-top: 85px;
+}
+.divHome {
+  background-color: #000000;
+}
+.homeimg {
+  width: 275px;
+  height: 260px;
+  transition: 0.5s all ease-in-out;
+}
+.homeimg:hover {
+  transform: scale(1.1);
+}
+.orangeText {
+  color: #fc8000;
+}
+.toast-body {
+  font-size: 18px;
+  font-weight: 550;
+}
+.toastbox {
+  position: fixed;
+  right: 50px;
+  bottom: 55px;
+  animation-name: toast;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  background-color: #fc8000;
+}
+@keyframes toast {
   from {
-    transform: rotate(0deg);
+    transform: scale(0.5);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
 }
+
+.btn-addToCart {
+  background-color: #fc8000;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100px;
+  transition: 0.3s all ease;
+}
+.btn-addToCart:hover {
+  box-shadow: 2px 3px 8px rgb(175, 175, 175);
+  background-color: #fc8000;
+  color: white;
+}
+.card {
+  border: none;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 12px 4.5px #ddd;
+}
+.badge {
+  font-size: 9px;
+  background-color: #fc8000;
+}
+.Cart-Container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 15px 30px #8e9faa33;
+  margin-top: 160px;
+}
+.Cart-Items {
+  width: 88%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image-box {
+  width: 15%;
+  text-align: center;
+}
+.image-box img {
+  border-radius: 7px;
+  width: 100%;
+}
+.about {
+  height: 100%;
+}
+.title {
+  padding-top: 5px;
+  font-size: 25px;
+  color: #fc8000;
+}
+.subtitle {
+  font-size: 15px;
+  color: #909090;
+  font-weight: 400;
+}
+.counter {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnCart {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fc8000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+}
+.count {
+  font-size: 18px;
+  font-weight: 900;
+  color: #202020;
+}
+.prices {
+  height: 100%;
+  text-align: right;
+  margin-top: 35px;
+}
+.amount {
+  padding-top: 10px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #000;
+}
+.Cart-Container hr {
+  width: 70%;
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+.checkout {
+  margin-right: 17%;
+  width: 28%;
+}
+.total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Subtotal {
+  font-size: 27px;
+  font-weight: 700;
+  color: #202020;
+}
+.items {
+  font-size: 16px;
+  font-weight: 500;
+  color: #909090;
+  line-height: 10px;
+}
+.total-amount {
+  font-size: 30px;
+  font-weight: 900;
+  color: #202020;
+}
+.button {
+  margin-top: 25px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: linear-gradient(to bottom right, #faaf64, #fc8000);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+.cartTitle {
+  font-weight: 550;
+  font-size: 35px;
+}
+.deleteIcon {
+  margin-top: 20px;
+  color: #fc8000;
+}
+.deleteIcon:hover {
+  color: #000;
+}
+.orangeBg {
+  background-color: #fc8000;
+}
+button:disabled {
+  background-color: #f6b26e;
+}
+.emptyCartImg {
+  height: 50%;
+}
+.crdHeader {
+  background-color: #f18f2d;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  height: 100px;
+}
+.Order-Container{
+  background-color: #ffffff;
+  border-radius: 17px;
+  box-shadow: 0px 15px 30px #8e9faa33;
+  height: 600px;
+  overflow: hidden;
+}
+.orders{
+  margin-top: 120px;
+}
+.order-item{
+  border-radius: 10px;
+}
+.order-img {
+  width: 19%;
+  text-align: center;
+}
+.order-img img {
+  border-radius: 7px;
+  width: 100%;
+}
+.order-detail{
+  margin-left: 40px;
+}
+.kl{
+  color: rgb(116, 111, 111);
+}
+
