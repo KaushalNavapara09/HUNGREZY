@@ -1,5 +1,41 @@
 [
   {
+    "name": "Elaichi Tea",
+    "veg": true,
+    "price": 49,
+    "description": "Boiling black tea in milk and water with a mixture of aromatic indian herbs and spices",
+    "seller": "Tea Post",
+    "quantity": 1,
+    "img": "https://images.unsplash.com/photo-1614221724928-a0ee7470a1f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+  },
+  {
+    "name": "Cold Coffee",
+    "veg": true,
+    "price": 79,
+    "description": "A classic blend of aromatic coffee beans & rich creamy milk",
+    "seller": "Tea Post",
+    "quantity": 1,
+    "img": "https://cdn.pixabay.com/photo/2017/08/06/14/11/drinks-2592848_960_720.jpg"
+  },
+  {
+    "name": "Idli Sambar",
+    "veg": true,
+    "price": 140,
+    "description": "Spongy 2 pcs of idlis steamed to perfection served with delicious hot sambhar and coconut chutney",
+    "seller": "Simply Madras",
+    "quantity": 1,
+    "img": "https://cdn.pixabay.com/photo/2017/06/16/11/38/breakfast-2408818_960_720.jpg"
+  },
+  {
+    "name": "Nylon Dosa",
+    "veg": true,
+    "price": 150,
+    "description": "A thin crispy plain dosa served with sambhar, red garlic chutney & white coconut chutney",
+    "seller": "Simply Madras",
+    "quantity": 1,
+    "img": "https://cdn.pixabay.com/photo/2016/10/25/13/42/indian-1768906_960_720.jpg"
+  },
+  {
     "name": "Margherita Pizza",
     "veg": true,
     "price": 449,
@@ -27,46 +63,28 @@
     "img": "https://cdn.pixabay.com/photo/2017/01/03/11/33/pizza-1949183_960_720.jpg"
   },
   {
-    "name": "Supreme Veg Burger",
+    "name": "Classic Veg Burger",
     "veg": true,
     "price": 129,
-    "description": "Our best-selling burger withcrispy veg patty, fresh onion and our signature sauce",
+    "description": "Our best-selling burger with veg patty, fresh onion and our classic mayo sauce",
     "seller": "Burger King",
     "quantity": 1,
     "img": "https://cdn.pixabay.com/photo/2019/11/09/17/02/burger-4614022_960_720.jpg"
   },
   {
-    "name": "Crispy Chicken Burger",
-    "veg": false,
+    "name": "Crispy Supreme Burger",
+    "veg": true,
     "price": 159,
-    "description": "Our best-selling burger with crispy chicken patty, onion and classic mayo sauce",
+    "description": "Our best-selling burger with crispy chicken patty, onion and signature sauce",
     "seller": "Burger King",
     "quantity": 1,
     "img": "https://cdn.pixabay.com/photo/2020/10/05/19/55/hamburger-5630646_960_720.jpg"
   },
   {
-    "name": "Idli Sambar",
+    "name": "Veg Biryani",
     "veg": true,
-    "price": 140,
-    "description": "Spongy 2 pcs of idlis steamed to perfection served with delicious hot sambhar and coconut chutney",
-    "seller": "Simply Madras",
-    "quantity": 1,
-    "img": "https://cdn.pixabay.com/photo/2017/06/16/11/38/breakfast-2408818_960_720.jpg"
-  },
-  {
-    "name": "Nylon Dosa",
-    "veg": true,
-    "price": 150,
-    "description": "A thin crispy plain dosa served with sambhar, red garlic chutney & white coconut chutney",
-    "seller": "Simply Madras",
-    "quantity": 1,
-    "img": "https://cdn.pixabay.com/photo/2016/10/25/13/42/indian-1768906_960_720.jpg"
-  },
-  {
-    "name": "Chicken Biryani",
-    "veg": false,
     "price": 139,
-    "description": "Medium sized spiced chiken pices cooked with basmati rice and special tangy masala",
+    "description": "Vegetables cooked with basmati rice and special tangy masala",
     "seller": "Shalimar Biryani",
     "quantity": 1,
     "img": "https://cdn.pixabay.com/photo/2022/02/12/15/05/biryani-7009127_960_720.jpg"
@@ -198,12 +216,21 @@
     "img": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    "name": "Elaichi Tea",
+    "name": "Strawberry Milk Shake",
     "veg": true,
-    "price": 49,
-    "description": "Boiling black tea in milk and water with a mixture of aromatic indian herbs and spices",
-    "seller": "Tea Post",
+    "price": 150,
+    "description": "Sweet strawberries, rich vanilla ice cream. Need we say more?",
+    "seller": "Keventers",
     "quantity": 1,
-    "img": "https://images.unsplash.com/photo-1614221724928-a0ee7470a1f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+    "img": "https://cdn.pixabay.com/photo/2017/06/06/21/50/strawberry-2378617_960_720.jpg"
+  },
+  {
+    "name": "Strawberry Ice Cream",
+    "veg": true,
+    "price": 100,
+    "description": "Expertly crafted ice cream made up of natural Strawberry pulp",
+    "seller": "51 Rainbow Ice Cream",
+    "quantity": 1,
+    "img": "https://cdn.pixabay.com/photo/2017/04/18/15/10/strawberry-ice-cream-2239377_960_720.jpg"
   }
 ]
