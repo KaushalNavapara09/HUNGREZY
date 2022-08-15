@@ -1,4 +1,4 @@
-import React, { useRef, useContext, useState } from 'react';
+import React, { useRef, useContext } from 'react';
 import ButtonContext from '../context/button/ButtonContext';
 import CartContext from '../context/cart/CartContext';
 import order from '../images/order.svg';
@@ -10,10 +10,10 @@ function ConfirmOrder() {
     let { confirmOrderRef } = context;
     const cartContext = useContext(CartContext);
     // eslint-disable-next-line
-    let { placeOrder, setBadgeNum, getNumOfProducts, getCartProductsData, badgeNum } = cartContext
+    let { placeOrder, setBadgeNum, getNumOfProducts, getCartProductsData, badgeNum, credentials, setCredentials } = cartContext
     const closeRef = useRef(null);
     let navigate = useNavigate();
-    const [credentials, setCredentials] = useState({ houseNo: "", area: "", city: "", pincode: "", payment: "" });
+    
     const onChange = (e) => {
         setCredentials({ ...credentials, [e.target.name]: e.target.value })
     }
