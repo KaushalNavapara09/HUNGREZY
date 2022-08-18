@@ -8,7 +8,6 @@ import Footer from './Footer';
 import Products from './Products';
 import UserContext from '../context/user/UserContext';
 import Navbar from './Navbar';
-import { Helmet } from "react-helmet";
 
 function Home() {
   const usercontext = useContext(UserContext);
@@ -17,12 +16,9 @@ function Home() {
     getUserData();
     // eslint-disable-next-line
   }, [])
-
+  document.title = "Order food online from India's best food delivery service"
   return (
     <>
-      <Helmet>
-        <title>Order food online from India's best food delivery service</title>
-      </Helmet>
       <Navbar />
       <div className='container-fluid d-flex justify-content-center divHome text-light g-0'>
         <div className="container row mx-3 d-flex justify-content-center">

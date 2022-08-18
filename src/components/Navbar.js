@@ -61,7 +61,7 @@ function Navbar() {
                                     <i className="fa-solid fa-user mx-1"></i> {localStorage.getItem('uname')}
                                 </Link>
                                 <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item my-2" to="/orders"><i class="fa-solid fa-bag-shopping px-1"></i> &nbsp;My Orders</Link></li>
+                                    <li><Link className="dropdown-item my-2" to="/orders"><i className="fa-solid fa-bag-shopping px-1"></i> &nbsp;My Orders</Link></li>
                                     <li><Link className="dropdown-item my-2" to="#" onClick={() => { chandePWDRef.current.click() }}><i className="fa-solid fa-key px-1"></i> Change password &nbsp;</Link></li>
                                     <li><Link className="dropdown-item my-2" to="/" onClick={handleLogout}><i className="fa-solid fa-right-from-bracket px-1"></i> Logout</Link></li>
                                 </ul>

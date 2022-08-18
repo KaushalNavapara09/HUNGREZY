@@ -5,7 +5,6 @@ import emptyCart from '../images/emptyCart.svg';
 import { useNavigate } from 'react-router-dom';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import ButtonContext from '../context/button/ButtonContext';
-import { Helmet } from "react-helmet";
 
 function Cart() {
     const context = useContext(CartContext);
@@ -18,12 +17,9 @@ function Cart() {
         getCartProductsData();
         // eslint-disable-next-line
     }, [])
-
+    document.title = "Hungrezy - Your Cart"
     return (
         <>
-            <Helmet>
-                <title>Hungrezy - Your Cart</title>
-            </Helmet>
             <div className='divCart'>
                 {cartProductData.length === 0 ?
                     <div style={{ width: '30%' }} className="emptyCart container justify-content-center py-5">

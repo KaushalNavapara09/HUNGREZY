@@ -3,7 +3,6 @@ import OrderItem from './OrderItem'
 import CartContext from '../context/cart/CartContext';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import noOrders from '../images/noOrder.svg';
-import { Helmet } from "react-helmet";
 
 function Orders() {
     const context = useContext(CartContext);
@@ -12,12 +11,9 @@ function Orders() {
         getOrderdata();
         // eslint-disable-next-line
     }, [orderData])
-
+    document.title = "Hungrezy - Your Orders"
     return (
         <>
-            <Helmet>
-                <title>Hungrezy - Your Orders</title>
-            </Helmet>
             <div className='divOrders'>
                 {orderData.length === 0 ?
                     <div style={{ width: '30%' }} className="noOrder container justify-content-center py-5">

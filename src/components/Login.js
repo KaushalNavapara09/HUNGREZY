@@ -58,7 +58,7 @@ function Login() {
 
             <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRightLogin" aria-labelledby="offcanvasRightLabel">
                 <div className="offcanvas-header">
-                    <button type="button" ref={closeRef} className="btn-close mt-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" ref={closeRef} onClick={()=>{setCredentials({ email: "", password: "" })}} className="btn-close mt-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body mx-2">
                     <div className='d-flex justify-content-between'>

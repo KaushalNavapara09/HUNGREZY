@@ -49,7 +49,7 @@ function Signup() {
       });
       // alert("Password and confirm password doesn't match...!");
     } else {
-      toast("User already exists !", {
+      toast("User with this email already exists !", {
         position: "bottom-right",
         autoClose: 2000,
         hideProgressBar: true,
@@ -69,7 +69,7 @@ function Signup() {
 
       <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRightSignup" aria-labelledby="offcanvasRightLabel">
         <div className="offcanvas-header">
-          <button type="button" ref={closeRef} className="btn-close mt-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" ref={closeRef} onClick={()=>{setCredentials({ name: "", email: "", phoneNo: "", password: "", cpassword: "" })}} className="btn-close mt-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div className="offcanvas-body mx-2">
           <div className='d-flex justify-content-between'>
@@ -85,7 +85,7 @@ function Signup() {
             </div>
             <div className="mb-3">
               <label htmlFor="phoneNo" className="form-label">Contact No</label>
-              <input type="number" value={credentials.phoneNo} className="form-control" id="phoneNo" required minLength={3} name="phoneNo" onChange={onChange} />
+              <input type="tel" value={credentials.phoneNo} pattern="^[6-9]\d{9}$" className="form-control" id="phoneNo" required minLength={10} name="phoneNo" onChange={onChange} />
             </div>
             <div className="mb-3">
               <label htmlFor="email" className="form-label">Email</label>
